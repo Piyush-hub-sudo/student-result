@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1f1f1f;
+    color: #ff7043;
+    text-align: center;
+    padding: 20px;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+main {
+    padding: 20px;
+    background-color: #1e1e1e;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1, h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+input[type="text"], input[type="number"], input[type="reset"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px 0;
+    border-radius: 8px;
+    border: 1px solid #444;
+    font-size: 16px;
+    background-color: #2c2c2c;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+input[type="number"] {
+    width: 80%;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    outline: none;
+    border-color: #ff7043;
+    background-color: #333;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+input[type="reset"] {
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="reset"]:hover {
+    background-color: #f44336;
+}
+
+/* Styling for the results section */
+#totalmarks, #percentage, #grade {
+    font-weight: bold;
+    font-size: 22px;
+    color: #ff7043;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Layout for labels and inputs */
+label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.subject {
+    width: 80%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #2c2c2c;
+    color: #fff;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.subject:focus {
+    outline: none;
+    border-color: #ff7043;
+    background-color: #333;
+}
+
+.result-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #292929;
+    border: 1px solid #444;
+    border-radius: 8px;
+    animation: fadeIn 0.8s ease-in-out;
+}

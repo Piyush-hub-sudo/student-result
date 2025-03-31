@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="STYLE.CSS">
+<body>
+    <header>
+        <h1>STUDENT RESULT</h1>
+    </header>
+    <main>
+        Enter student name : <input type="text" id="name"><br><br>
+        Enter Roll Number : <input type="number" name="roll number" id="rollnumber"><br><br>
+        <h3>Enter Student Marks </h3>
+
+        Hindi : <br> <input type="number" class="subject" id="hindi"><br><br>
+        Math : <br><input type="number" class="subject" id="Math"><br><br>
+        science : <br><input type="number" class="subject" id="science"><br><br>
+        English : <br><input type="number" class="subject" id="English"><br><br>
+        social studies :<br> <input type="number" class="subject" id="sst"><br><br>
+        computer : <br><input type="number" class="subject" id="pc"><br><br>
+
+
+        <button onclick="grade()"> check!</button> <input type="reset" value="reset">
+        <hr>
+        <hr>
+
+        <h3>
+            Total marks : <SPAN id="totalmarks"> </SPAN>
+        </h3>
+
+        <h3>
+            Percentage : <span id="percentage"> </span>
+        </h3>
+
+        <h3>
+            Grade : <span id="grade"> </span>
+        </h3>
+
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
